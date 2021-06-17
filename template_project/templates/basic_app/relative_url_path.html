@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% block my_block %}
+    <h1>RELATIVE PATH ARE AWESOME WITH DJANGO!</h1>
+    <a href="{% url 'basicapp:other' %}">Other</a>
+    <a href="{% url 'admin:index' %}">Admin</a>
+    <a href="{% url 'index' %}">Index</a>
+{% endblock %}
